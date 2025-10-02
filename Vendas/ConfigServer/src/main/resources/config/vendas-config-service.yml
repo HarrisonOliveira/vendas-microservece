@@ -1,0 +1,24 @@
+# Configuração do servidor
+server:
+  port: 8083
+  wait-time-in-ms-when-sync-empty: 3000
+
+#consiguração do spring cloud config
+spring:
+  spring:
+    profiles:
+      active: native
+  #Dentro da config do Spring Cloud fica a configuração do banco de dados
+  data:
+    mongodb:
+      uri: mongodb://admin:superSecreta@localhost:27017/?authMechanism=SCRAM-SHA-256
+      database: VendasDB
+      auto-index-creation: true
+
+application:
+  produtoService:
+    endpointConsultarProduto: http://localhost:8082/produtos
+  clienteService:
+    endpointConsultarCliente: http://localhost:8081/clientes
+
+Application-version: 0.1

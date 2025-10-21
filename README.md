@@ -2,7 +2,7 @@
 
 ## 📋 Sobre o Projeto
 
-O **Sistema de Vendas** é uma aplicação baseada em arquitetura de microserviços desenvolvida durante
+O **Sistema de Vendas** é uma aplicação baseada em arquitetura de microsserviços desenvolvida durante
 o curso **Especialista Java Back-end**, na Ebac e tem como finalidade, gerenciar operações de vendas, clientes 
 e produtos de forma escalável e distribuída.
 O projeto foi construído seguindo as melhores práticas de desenvolvimento de software,
@@ -14,13 +14,13 @@ utilizando tecnologias modernas do ecossistema Spring.
 - **Gestão de Produtos**: Controle completo do catálogo de produtos
 - **Gestão de Vendas**: Processamento e registro de vendas, integrando clientes e produtos
 - **Configuração Centralizada**: Gerenciamento de configurações através do Spring Cloud Config Server
-- **Comunicação entre Serviços**: Integração entre microserviços utilizando OpenFeign
+- **Comunicação entre Serviços**: Integração entre microsserviços utilizando OpenFeign
 
 ### 🔍 Contexto de Uso
 
 Este sistema é ideal para:
 - Pequenas e médias empresas que precisam gerenciar vendas
-- Projetos acadêmicos de arquitetura de microserviços
+- Projetos acadêmicos de arquitetura de microsserviços
 - Portfolio de desenvolvedores backend
 - Base para sistemas de e-commerce
 
@@ -28,7 +28,7 @@ Este sistema é ideal para:
 
 ## 🏗️ Arquitetura do Projeto
 
-O projeto foi desenvolvido utilizando uma **arquitetura de microserviços**,
+O projeto foi desenvolvido utilizando uma **arquitetura de microsserviços**,
 onde cada serviço é independente e possui sua própria responsabilidade.
 A comunicação entre os serviços é realizada através de APIs RESTful.
 
@@ -36,21 +36,21 @@ A comunicação entre os serviços é realizada através de APIs RESTful.
 
 ```
 Vendas/ 
-    ├── ClienteService/ # Microserviço responsável pela gestão de clientes 
-    ├── ProdutoService/ # Microserviço responsável pela gestão de produtos 
-    ├── VendasService/ # Microserviço responsável pelo processamento de vendas 
+    ├── ClienteService/ # Microsserviço responsável pela gestão de clientes 
+    ├── ProdutoService/ # Microsserviço responsável pela gestão de produtos 
+    ├── VendasService/ # Microsserviço responsável pelo processamento de vendas 
     └── ConfigServer/ # Servidor de configuração centralizada
 ```
 
 ### 🎨 Padrões Arquiteturais Utilizados
 
-#### **Microserviços**
+#### **Microsserviços**
 Cada serviço é uma aplicação independente com:
 - Base de dados própria (MongoDB)
 - Endpoint REST específico
 - Domínio de negócio bem definido
 
-#### **Camadas da Aplicação** (por microserviço)
+#### **Camadas da Aplicação** (por Microsserviço)
 
 * Controller (API REST)
 * Service (Lógica de Negócio) 
@@ -85,7 +85,7 @@ Cada serviço é uma aplicação independente com:
 
 | Tecnologia | Descrição |
 |------------|-----------|
-| **OpenFeign** | Cliente HTTP declarativo para comunicação entre microserviços |
+| **OpenFeign** | Cliente HTTP declarativo para comunicação entre Microsserviços |
 | **REST API** | Protocolo de comunicação via HTTP/JSON |
 
 ### **Banco de Dados**

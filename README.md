@@ -1,4 +1,4 @@
-# 🛍️ Sistema de Vendas - Microserviços
+# 🛍️ Sistema de Vendas - Microsserviços
 
 ## 📋 Sobre o Projeto
 
